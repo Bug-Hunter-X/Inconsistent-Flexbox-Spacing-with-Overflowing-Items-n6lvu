@@ -1,0 +1,17 @@
+To address the inconsistent spacing, a solution is to use `flex-wrap: wrap;` along with `justify-content: space-around;` or `justify-content: space-between;`  The `flex-wrap: wrap;` property allows items to wrap onto multiple lines, which solves the overflow issue. Using `space-around` distributes the space more evenly. 
+
+```css
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.item {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+}
+```
+
+This ensures a consistent and predictable layout across different browsers, regardless of whether the items' total width exceeds the container's width.
